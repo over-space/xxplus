@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/cache
+       http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <!-- 需要解密的文件 -->
+    <bean class="com.xxplus.code.method.EncryptPropertyConfigurer">
+        <property name="location" value="classpath:jdbc.properties"/>
+        <property name="fileEncoding" value="UTF-8"></property>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="order" value="1"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="location" value="classpath:common.properties"/>
+    </bean>
+
+    <cache:annotation-driven cache-manager="cacheManager"/>
+
+    <bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+        <property name="configLocation" value="classpath:ehcache.xml"/>
+        <property name="shared" value="true"/>
+    </bean>
+
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+        <property name="cacheManager" ref="ehCacheManager"/>
+    </bean>
+
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="cacheSeconds" value="${message.cache_seconds}"/>
+        <property name="useCodeAsDefaultMessage" value="true"/>
+        <property name="fileEncodings" value="UTF-8"/>
+        <property name="basenames">
+            <list>
+                <value>${message.common_path}</value>
+                <value>${message.admin_path}</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 指定国际化编码UTF-8 -->
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.FixedLocaleResolver">
+        <property name="defaultLocale" value="${system.locale}"/>
+    </bean>
+
+    <import resource="classpath:spring-db.xml"></import>
+    <import resource="classpath:spring-shiro.xml"></import>
+    <import resource="classpath:spring-activiti.xml"></import>
+    <!--<import resource="classpath:spring-cron.xml"></import>-->
+</beans>
