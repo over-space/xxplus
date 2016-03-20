@@ -23,7 +23,7 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
-    <context:component-scan base-package="com.xxplus.code" use-default-filters="false">
+    <context:component-scan base-package="com.xxplus" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
@@ -61,14 +61,14 @@
                 <entry key="path" value="#{servletContext.contextPath}"/>
                 <entry key="locale" value="${system.locale}"/>
                 <!--&lt;!&ndash; 解析XML配置文件 &ndash;&gt;-->
-                <entry key="setting" value="#{T(com.xxplus.code.utils.SettingUtils).get()}"/>
+                <entry key="setting" value="#{T(com.xxplus.utils.SettingUtils).get()}"/>
                 <entry key="msg" value-ref="messageMethod"/>
             </map>
         </property>
     </bean>
 
     <!-- 获取国际化资源 -->
-    <bean id="messageMethod" class="com.xxplus.code.method.MessageMethod"/>
+    <bean id="messageMethod" class="com.xxplus.method.MessageMethod"/>
 
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
         <property name="providerClass" value="org.hibernate.validator.HibernateValidator"/>

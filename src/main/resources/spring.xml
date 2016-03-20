@@ -8,7 +8,7 @@
        http://www.springframework.org/schema/cache/spring-cache.xsd">
 
     <!-- 需要解密的文件 -->
-    <bean class="com.xxplus.code.method.EncryptPropertyConfigurer">
+    <bean class="com.xxplus.method.EncryptPropertyConfigurer">
         <property name="location" value="classpath:jdbc.properties"/>
         <property name="fileEncoding" value="UTF-8"></property>
     </bean>

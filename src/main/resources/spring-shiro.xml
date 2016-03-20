@@ -27,10 +27,10 @@
     </bean>
 
     <!-- 基于表单提交过滤器 -->
-    <bean id="authenticationFilter" class="com.xxplus.code.auth.AuthenticationFilter"></bean>
+    <bean id="authenticationFilter" class="com.xxplus.auth.AuthenticationFilter"></bean>
 
     <!-- 自定义Realm,权限验证 -->
-    <bean id="authenticationRealm" class="com.xxplus.code.auth.AuthenticationRealm"/>
+    <bean id="authenticationRealm" class="com.xxplus.auth.AuthenticationRealm"/>
 
 
     <!--<bean id="passwordRetryCache" class="com.aplus.filter.RetryLimitHashedCredentialsMatcher">-->
