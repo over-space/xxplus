@@ -6,7 +6,7 @@ import com.xxplus.activiti.vo.FlowTaskVO;
 import com.xxplus.activiti.listener.ExecutionEndListener;
 import com.xxplus.activiti.listener.ExecutionStartListener;
 import com.xxplus.activiti.listener.ExecutionTakeListener;
-import com.xxplus.base.BaseTest;
+import com.xxplus.base.SpringBaseTest;
 import org.activiti.bpmn.BpmnAutoLayout;
 import org.activiti.bpmn.model.*;
 import org.activiti.bpmn.model.Process;
@@ -27,7 +27,7 @@ import java.util.Map;
  * Created by admin on 2015-12-26.
  */
 @ContextConfiguration(locations = {"classpath:spring.xml"})
-public class WorkflowBaseService extends BaseTest {
+public class WorkflowSpringBaseService extends SpringBaseTest {
 
     @Autowired public RepositoryService repositoryService;
     @Autowired public FormService formService;

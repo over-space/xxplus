@@ -1,6 +1,6 @@
 package com.xxplus.activiti.service.test.chapter01;
 
-import com.xxplus.activiti.core.WorkflowBaseService;
+import com.xxplus.activiti.core.WorkflowSpringBaseService;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
@@ -16,7 +16,7 @@ import java.util.Map;
  * Created by admin on 2016-01-30.
  */
 @ContextConfiguration(locations = {"classpath:spring.xml"})
-public class ActivitiParallelGatewayTest extends WorkflowBaseService {
+public class ActivitiParallelGatewayTestSpring extends WorkflowSpringBaseService {
 
 
     @Test

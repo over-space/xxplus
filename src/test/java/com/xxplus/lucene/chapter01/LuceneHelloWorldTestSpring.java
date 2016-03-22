@@ -1,6 +1,6 @@
 package com.xxplus.lucene.chapter01;
 
-import com.xxplus.base.BaseTest;
+import com.xxplus.base.SpringBaseTest;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.*;
@@ -29,7 +29,7 @@ import java.nio.file.Paths;
  * Created by admin on 2016-03-15.
  */
 @ContextConfiguration(locations = {"classpath:spring.xml"})
-public class LuceneHelloWorldTest extends BaseTest{
+public class LuceneHelloWorldTestSpring extends SpringBaseTest {
 
     @Test
     public void lucene() throws IOException, ParseException {

@@ -1,6 +1,6 @@
 package com.xxplus.activiti.service.test.chapter01;
 
-import com.xxplus.activiti.core.WorkflowBaseService;
+import com.xxplus.activiti.core.WorkflowSpringBaseService;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
@@ -16,15 +16,15 @@ import java.util.Map;
  * Created by admin on 2016-01-30.
  */
 @ContextConfiguration(locations = {"classpath:spring.xml"})
-public class ActivitiInclusiveGatewayTest extends WorkflowBaseService {
+public class ActivitiEventGatewayTestSpring extends WorkflowSpringBaseService {
 
 
     @Test
     public void deploy(){
-        InputStream inputStream = this.getClass().getResourceAsStream("/activiti/jbpm/Gateway_Inclusive.bpmn");
+        InputStream inputStream = this.getClass().getResourceAsStream("/activiti/jbpm/Gateway_Event.bpmn");
         Deployment deployment = repositoryService.createDeployment()
-                .name("Gateway_Inclusive")
-                .addInputStream("Gateway_Inclusive.bpmn", inputStream)
+                .name("Gateway_Event")
+                .addInputStream("Gateway_Event.bpmn", inputStream)
                 .deploy();
 
         logger.info("部署ID:{}", deployment.getId());
@@ -34,11 +34,11 @@ public class ActivitiInclusiveGatewayTest extends WorkflowBaseService {
 
     @Test
     public void startProcessInstance() {
-        String processInstanceKey = "InclusiveGateway";
+        String processInstanceKey = "Gateway_Event";
         Map<String, Object> variables = new HashMap<>();
-        variables.put("applicant", "lisi");
-        variables.put("startDate", "2016-02-14");
-        variables.put("endDate", "2016-02-16");
+//        variables.put("applicant", "lisi");
+//        variables.put("startDate", "2016-02-14");
+//        variables.put("endDate", "2016-02-16");
 
         ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(processInstanceKey, variables);
 

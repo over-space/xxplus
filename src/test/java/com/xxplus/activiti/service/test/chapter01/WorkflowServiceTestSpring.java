@@ -2,7 +2,7 @@ package com.xxplus.activiti.service.test.chapter01;
 
 import com.xxplus.activiti.vo.FlowTaskVO;
 import com.xxplus.activiti.core.WorkFlowParams;
-import com.xxplus.activiti.core.WorkflowBaseService;
+import com.xxplus.activiti.core.WorkflowSpringBaseService;
 import org.activiti.engine.history.HistoricDetail;
 import org.activiti.engine.history.HistoricFormProperty;
 import org.activiti.engine.repository.ProcessDefinition;
@@ -23,7 +23,7 @@ import java.util.Map;
  * Created by admin on 2015-12-26.
  */
 @ContextConfiguration(locations = {"classpath:spring.xml"})
-public class WorkflowServiceTest extends WorkflowBaseService {
+public class WorkflowServiceTestSpring extends WorkflowSpringBaseService {
 
     private static final String PROCESS_ID = "AC201601";
     private static final String PROCESS_NAME = "请假流程";

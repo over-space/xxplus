@@ -19,11 +19,11 @@
 
     <dependencies>
 
-        <!--<dependency>-->
-            <!--<groupId>net.coobird.thumbnailator</groupId>-->
-            <!--<artifactId>Thumbnails</artifactId>-->
-            <!--<version>0.4.2</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>net.coobird</groupId>
+            <artifactId>thumbnailator</artifactId>
+            <version>0.4.1</version>
+        </dependency>
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -322,12 +322,6 @@
             <artifactId>lucene-queryparser</artifactId>
             <version>5.5.0</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>org.wltea.ik-analyzer</groupId>-->
-            <!--<artifactId>ik-analyzer</artifactId>-->
-            <!--<version>3.2.8</version>-->
-        <!--</dependency>-->
 
     </dependencies>
 

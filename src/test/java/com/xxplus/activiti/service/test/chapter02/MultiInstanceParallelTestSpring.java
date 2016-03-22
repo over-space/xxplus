@@ -1,6 +1,6 @@
 package com.xxplus.activiti.service.test.chapter02;
 
-import com.xxplus.activiti.core.WorkflowBaseService;
+import com.xxplus.activiti.core.WorkflowSpringBaseService;
 import org.activiti.engine.task.Task;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,7 +15,7 @@ import java.util.Map;
  * Created by admin on 2016-03-05.
  */
 @ContextConfiguration(locations = {"classpath:spring.xml"})
-public class MultiInstanceParallelTest extends WorkflowBaseService {
+public class MultiInstanceParallelTestSpring extends WorkflowSpringBaseService {
 
 
     @Test
