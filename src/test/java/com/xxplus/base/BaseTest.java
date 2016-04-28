@@ -5,7 +5,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
 /**
  * Created by lifang on 2015/1/22.
@@ -33,4 +32,6 @@ public class BaseTest{
     public void testRun(){
 
     }
+
+
 }
