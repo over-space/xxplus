@@ -1,5 +1,6 @@
 package com.xxplus.dao.impl;
 
+import com.xxbase.dao.impl.BaseDaoImpl;
 import com.xxplus.dao.LoginLogDao;
 import com.xxplus.entity.LoginLogEntity;
 import org.springframework.stereotype.Repository;

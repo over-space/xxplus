@@ -1,6 +1,7 @@
 package com.xxplus.services;
 
 
+import com.xxbase.services.BaseService;
 import com.xxplus.entity.MemberEntity;
 
 /**

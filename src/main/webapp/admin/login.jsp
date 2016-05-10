@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
     <title>用户登录</title>
 
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/resources/css/login/login.css"/>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/jquery-1.7.2.js"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/resources/xxplus/css/login/login.css"/>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/resources/xxplus/js/jquery-1.7.2.js"/>
 </head>
 
 <script type="text/javascript">
@@ -43,9 +43,9 @@
 <body onselectstart="return false" style="-moz-user-select:none;">
 <div class="main_r">
     <form action="login.jsp" method="post" id="loginform" name="loginform">
-        <img class="i_com" src="<%=request.getContextPath() %>/resources/images/login/login_home_icon.png">
-        <img class="i_name" src="<%=request.getContextPath() %>/resources/images/login/login_name_icon.png">
-        <img class="i_pass" src="<%=request.getContextPath() %>/resources/images/login/login_pass_icon.png">
+        <img class="i_com" src="<%=request.getContextPath() %>/resources/xxplus/images/login/login_home_icon.png">
+        <img class="i_name" src="<%=request.getContextPath() %>/resources/xxplus/images/login/login_name_icon.png">
+        <img class="i_pass" src="<%=request.getContextPath() %>/resources/xxplus/images/login/login_pass_icon.png">
         <input name="companyname" id="companyname" maxlength="13" type="text" class="input" placeholder="公司名"/>
         <input rows="1" name="username" value="admin" id="username" type="text" class="input" maxlength="13"
                placeholder="用户名" autocomplete="off"/>
@@ -54,7 +54,7 @@
 
         <% if (loginStatus != null) { %>
         <div class="tip_con">
-            <img class="i_warn" src="<%=request.getContextPath()%>/resources/images/login/login_warn_icon.png">
+            <img class="i_warn" src="<%=request.getContextPath()%>/resources/xxplus/images/login/login_warn_icon.png">
             <span class="tip_txt"><%=loginStatus %></span>
         </div>
         <% } else { %>

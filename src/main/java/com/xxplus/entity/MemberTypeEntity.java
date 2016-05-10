@@ -1,5 +1,7 @@
 package com.xxplus.entity;
 
+import com.xxbase.entity.BaseEntity;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 

@@ -1,7 +1,7 @@
 package com.xxplus.listener;
 
 
-import com.xxplus.entity.BaseEntity;
+import com.xxbase.entity.BaseEntity;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;

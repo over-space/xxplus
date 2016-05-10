@@ -1,0 +1,31 @@
+package com.xxbase.services;
+
+import javax.validation.constraints.NotNull;
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.List;
+
+/**
+ * Created by lifang on 2015/1/22.
+ */
+public abstract interface BaseService<T, ID extends Serializable> {
+
+    public abstract T findById(@NotNull ID id);
+
+    public abstract T findByName(String name);
+
+    public abstract List<T> findAll();
+
+    public abstract void persist(@NotNull T t);
+
+    public abstract void persist(@NotNull Collection<T> t);
+
+    public abstract T merge(@NotNull T t);
+
+    public abstract void remove(@NotNull T t);
+
+    public abstract void remove(@NotNull ID id);
+
+    public abstract List<T> findAllByName(String name);
+
+}

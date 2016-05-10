@@ -1,7 +1,8 @@
 package com.xxplus.services.impl;
 
+import com.xxbase.services.impl.BaseServiceImpl;
 import com.xxplus.dao.AdminDao;
-import com.xxplus.dao.BaseDao;
+import com.xxbase.dao.BaseDao;
 import com.xxplus.entity.AdminEntity;
 import com.xxplus.services.AdminService;
 import org.apache.commons.lang3.StringUtils;

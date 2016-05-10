@@ -3,6 +3,7 @@ package com.xxplus.dao.impl;
 
 import com.mysema.query.jpa.impl.JPAQuery;
 import com.mysema.query.types.path.PathBuilder;
+import com.xxbase.dao.impl.BaseDaoImpl;
 import com.xxplus.dao.CompanyDao;
 import com.xxplus.entity.CompanyEntity;
 import org.springframework.stereotype.Repository;

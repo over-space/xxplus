@@ -1,7 +1,8 @@
 package com.xxplus.services.impl;
 
 
-import com.xxplus.dao.BaseDao;
+import com.xxbase.dao.BaseDao;
+import com.xxbase.services.impl.BaseServiceImpl;
 import com.xxplus.entity.RoleEntity;
 import com.xxplus.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;

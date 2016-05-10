@@ -1,6 +1,7 @@
 package com.xxplus.services.impl;
 
-import com.xxplus.dao.BaseDao;
+import com.xxbase.dao.BaseDao;
+import com.xxbase.services.impl.BaseServiceImpl;
 import com.xxplus.dao.PermissionSourceDao;
 import com.xxplus.entity.PermissionSourceEntity;
 import com.xxplus.services.PermissionSourceService;

@@ -1,6 +1,7 @@
 package com.xxplus.dao;
 
 
+import com.xxbase.dao.BaseDao;
 import com.xxplus.entity.MenuEntity;
 
 /**

@@ -1,8 +1,8 @@
 package com.xxplus.activiti.service.test.chapter01;
 
-import com.xxplus.activiti.vo.FlowTaskVO;
 import com.xxplus.activiti.core.WorkFlowParams;
 import com.xxplus.activiti.core.WorkflowSpringBaseService;
+import com.xxplus.activiti.vo.FlowTaskVO;
 import org.activiti.engine.history.HistoricDetail;
 import org.activiti.engine.history.HistoricFormProperty;
 import org.activiti.engine.repository.ProcessDefinition;

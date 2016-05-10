@@ -1,5 +1,7 @@
 package com.xxplus.entity;
 
+import com.xxbase.entity.BaseEntity;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;

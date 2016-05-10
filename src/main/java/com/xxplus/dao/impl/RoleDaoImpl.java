@@ -1,5 +1,6 @@
 package com.xxplus.dao.impl;
 
+import com.xxbase.dao.impl.BaseDaoImpl;
 import com.xxplus.dao.RoleDao;
 import com.xxplus.entity.RoleEntity;
 import org.springframework.stereotype.Repository;

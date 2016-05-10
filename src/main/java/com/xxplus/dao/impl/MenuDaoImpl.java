@@ -1,6 +1,7 @@
 package com.xxplus.dao.impl;
 
 
+import com.xxbase.dao.impl.BaseDaoImpl;
 import com.xxplus.dao.MenuDao;
 import com.xxplus.entity.MenuEntity;
 import org.springframework.stereotype.Repository;

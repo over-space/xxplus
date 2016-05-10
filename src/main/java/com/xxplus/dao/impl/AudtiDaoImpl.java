@@ -1,5 +1,6 @@
 package com.xxplus.dao.impl;
 
+import com.xxbase.dao.impl.BaseDaoImpl;
 import com.xxplus.dao.AuditDao;
 import com.xxplus.entity.AuditEntity;
 import org.springframework.stereotype.Repository;

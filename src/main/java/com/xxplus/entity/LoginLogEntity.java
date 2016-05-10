@@ -1,6 +1,7 @@
 package com.xxplus.entity;
 
 
+import com.xxbase.entity.BaseEntity;
 import com.xxplus.enums.LoginModeEnum;
 
 import javax.persistence.*;

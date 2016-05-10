@@ -1,11 +1,11 @@
 package com.xxplus.activiti.core;
 
 import com.alibaba.fastjson.JSON;
-import com.xxplus.activiti.vo.AssigneeVO;
-import com.xxplus.activiti.vo.FlowTaskVO;
 import com.xxplus.activiti.listener.ExecutionEndListener;
 import com.xxplus.activiti.listener.ExecutionStartListener;
 import com.xxplus.activiti.listener.ExecutionTakeListener;
+import com.xxplus.activiti.vo.AssigneeVO;
+import com.xxplus.activiti.vo.FlowTaskVO;
 import com.xxplus.base.SpringBaseTest;
 import org.activiti.bpmn.BpmnAutoLayout;
 import org.activiti.bpmn.model.*;

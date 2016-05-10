@@ -1,5 +1,6 @@
 package com.xxplus.controller;
 
+import com.xxbase.controller.BaseController;
 import com.xxplus.entity.MenuEntity;
 import com.xxplus.services.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;

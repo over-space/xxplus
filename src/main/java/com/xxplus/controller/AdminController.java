@@ -1,5 +1,6 @@
 package com.xxplus.controller;
 
+import com.xxbase.controller.BaseController;
 import org.springframework.stereotype.Controller;
 
 /**

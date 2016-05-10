@@ -1,6 +1,7 @@
 package com.xxplus.services.impl;
 
-import com.xxplus.dao.BaseDao;
+import com.xxbase.dao.BaseDao;
+import com.xxbase.services.impl.BaseServiceImpl;
 import com.xxplus.entity.SubMenuEntity;
 import com.xxplus.services.SubMenuService;
 import org.springframework.beans.factory.annotation.Autowired;

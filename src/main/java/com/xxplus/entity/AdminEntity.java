@@ -1,5 +1,6 @@
 package com.xxplus.entity;
 
+import com.xxbase.entity.BaseEntity;
 import com.xxplus.logs.IAuditLog;
 import com.xxplus.utils.CipherUtils;
 import org.hibernate.validator.constraints.Length;
